@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}Flasky{% endblock %}
+{% block page_content %}
+<div class="page-header">
+    <h1>This aplication show the weather in any city in the world</h1>
+    <h1>In city {{city_name}} temperature is {{temperature}}</h1>
+</div>
+{{ wtf.quick_form(form) }}
+{% endblock %}
